@@ -1,43 +1,37 @@
-# Astro Starter Kit: Minimal
 
-```sh
-npm create astro@latest -- --template minimal
-```
+# Organizador de Mesas
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Este proyecto es una plantilla base creada con Astro (JavaScript) para organizar mesas o asientos en eventos.
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura del proyecto
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
+/  (raíz del proyecto)
+├── public/         # Archivos estáticos
+├── src/            # Código fuente
+│   └── pages/      # Páginas Astro
 │       └── index.astro
-└── package.json
+└── package.json    # Configuración del proyecto
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Comandos principales
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Todos los comandos se ejecutan desde la raíz del proyecto, en la terminal:
 
-Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
+| Comando                   | Acción                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Instala las dependencias                         |
+| `npm run dev`             | Inicia el servidor de desarrollo en `localhost:4321` |
+| `npm run build`           | Genera el sitio de producción en `./dist/`       |
+| `npm run preview`         | Previsualiza el sitio generado localmente        |
+| `npm run astro ...`       | Ejecuta comandos CLI como `astro add`, `astro check` |
+| `npm run astro -- --help` | Muestra ayuda sobre la CLI de Astro              |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Notas
+- Proyecto inicializado con la plantilla mínima de Astro y JavaScript.
+- Puedes agregar frameworks o utilidades con `astro add`.
+
+---
+¿Dudas? Consulta la [documentación oficial de Astro](https://docs.astro.build/es/).
