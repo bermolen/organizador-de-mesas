@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Iniciar API (Express + SQLite)",
+      "type": "shell",
+      "command": "node api/server.js",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

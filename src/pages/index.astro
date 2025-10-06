@@ -2,6 +2,13 @@
 
 ---
 
+---
+import TopBar from "../components/TopBar.jsx";
+import GuestWaitingArea from "../components/GuestWaitingArea.jsx";
+import TablesArea from "../components/TablesArea.jsx";
+import GuestUpload from "../components/GuestUpload.jsx";
+---
+
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
@@ -11,7 +18,14 @@
 		<title>Organizador de Mesas</title>
 		<link rel="stylesheet" href="/src/styles/global.css" />
 	</head>
-	<body>
-		<h1>Organizador de Mesas</h1>
+	<body class="bg-gray-50 min-h-screen">
+		<TopBar client:load />
+		<main class="flex flex-col md:flex-row gap-4 max-w-6xl mx-auto mt-6">
+			<GuestWaitingArea client:load />
+			<section class="flex-1 flex flex-col gap-4">
+				<GuestUpload client:load />
+				<TablesArea client:load />
+			</section>
+		</main>
 	</body>
 </html>
